@@ -1,12 +1,11 @@
 server:
-  #port: 8081
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 8082
 spring:
   application:
-    name: ms-catalogo
+    name: ms-producto
 
   datasource:
-    url: jdbc:mysql://localhost:3306/ms_catalogo
+    url: jdbc:mysql://localhost:3306/ms_producto
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,8 +24,6 @@ springdoc:
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://localhost:8090/eureka
-      defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
+      defaultZone: http://localhost:8090/eureka
   instance:
-    #hostname: localhost
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: localhost
