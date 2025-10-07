@@ -1,4 +1,4 @@
-package pe.edu.upeu.msauth.entity;
+package com.example.msauth.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

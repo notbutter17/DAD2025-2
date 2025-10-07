@@ -1,8 +1,8 @@
-package pe.edu.upeu.msauth.repository;
+package com.example.msauth.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import pe.edu.upeu.msauth.entity.AuthUser;
+import com.example.msauth.entity.AuthUser;
 
 import java.util.Optional;
 

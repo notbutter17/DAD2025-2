@@ -1,4 +1,4 @@
-package pe.edu.upeu.msauth.dto;
+package com.example.msauth.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

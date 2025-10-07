@@ -1,13 +1,13 @@
-package pe.edu.upeu.msauth.service.impl;
+package com.example.msauth.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.msauth.dto.AuthUserDto;
-import pe.edu.upeu.msauth.dto.TokenDto;
-import pe.edu.upeu.msauth.entity.AuthUser;
-import pe.edu.upeu.msauth.repository.AuthUserRepository;
-import pe.edu.upeu.msauth.security.JwtProvider;
-import pe.edu.upeu.msauth.service.AuthUserService;
+import com.example.msauth.dto.AuthUserDto;
+import com.example.msauth.dto.TokenDto;
+import com.example.msauth.entity.AuthUser;
+import com.example.msauth.repository.AuthUserRepository;
+import com.example.msauth.security.JwtProvider;
+import com.example.msauth.service.AuthUserService;
 import java.util.Optional;
 @Service
 public class AuthUserServiceImpl implements AuthUserService {

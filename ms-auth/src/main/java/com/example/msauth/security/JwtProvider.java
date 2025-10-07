@@ -1,9 +1,9 @@
-package pe.edu.upeu.msauth.security;
+package com.example.msauth.security;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.msauth.entity.AuthUser;
+import com.example.msauth.entity.AuthUser;
 
 import javax.annotation.PostConstruct;
 import java.util.Base64;
