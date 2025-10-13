@@ -1,6 +1,6 @@
 package pe.edu.upeu.msgatewayserver.config;
 
-import pe.edu.upeu.dto.TokenDto;
+import pe.edu.upeu.msgatewayserver.dto.TokenDto;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.http.HttpHeaders;
