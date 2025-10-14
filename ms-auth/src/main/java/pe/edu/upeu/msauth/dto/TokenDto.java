@@ -1,13 +1,15 @@
-package pe.edu.upeu.msgatewayserver.dto;
+package pe.edu.upeu.msauth.dto;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+
 @NoArgsConstructor
-@Builder
 @AllArgsConstructor
 @Data
+@Builder
 public class TokenDto {
     private String token;
 }
-
