@@ -2,10 +2,13 @@ server:
   port: ${PORT:${SERVERS_PORT:0}}
 
 spring:
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+  application:
+    name: ms-auth-service
+    jpa:
+      hibernate:
+        ddl-auto: update
+      generate-ddl: true
+      show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ms_auth
@@ -15,10 +18,11 @@ spring:
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://localhost:8090/eureka
+      # defaultZone: http://localhost:8090/eureka
       defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
   instance:
-    #hostname: localhost
+    # hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
 jwt:
   secret: secret

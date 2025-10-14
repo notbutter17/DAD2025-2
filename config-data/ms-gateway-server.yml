@@ -34,8 +34,8 @@ spring:
               uri: lb://ms-producto
               predicates:
                 - Path=/producto/**
-            - id: ms-auth
-              uri: lb://ms-auth
+            - id: ms-auth-service
+              uri: lb://ms-auth-service
               predicates:
                 - Path=/auth/**
               # Si tu servicio real no expone /categoria/...:
